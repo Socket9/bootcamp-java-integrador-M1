@@ -1,0 +1,32 @@
+:root {
+    /* COLORS */
+    --primary-color: #71bf44;
+    --secondary-color: #0f75bc;
+    --white-color: #f1f1f1;
+    --black-color: #161616;
+    --gray-color: #b8b8b8;
+
+    /* FONT SIZE */
+    --header-title-size: 3.6rem;
+    --header-subtitle-size: 1.8em;
+    --header-text-size: 1.3rem;
+    --header-h3-size: 1.6rem;
+    --header-icon-size: 1.8rem;
+    
+    --newsletter-title-size: 1.6rem;
+    --newsletter-text-size: 1rem;
+       
+    --btn-size: 1.2rem;
+    --call-to-action-btn-size: 1.6rem;
+
+    --nav-font-size: 1.2rem;
+    --nav-icon-size: 2rem;
+
+
+
+    /* BORDER RADIOUS */
+    --section-border-radius: 1rem;
+    --item-border-radius: 8px;
+
+    --font-family: "Finlandica", sans-serif;
+}

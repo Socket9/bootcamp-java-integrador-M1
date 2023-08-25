@@ -1,0 +1,248 @@
+:root {
+    --primary-color: #71bf44;
+    --secondary-color: #0f75bc;
+    --white-color: #f1f1f1;
+    --black-color: #161616;
+    --gray-color: #b8b8b8;
+
+    --main-title-size: 3rem;
+    --main-subtitle-size: 1.1rem;
+
+    --nav-font-size: 1.2rem;
+    --nav-icon-size: 2rem;
+
+    --font-family: "Finlandica", sans-serif;
+}
+html {
+    font-size: 16px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+body {
+    width: 100%;
+    background-color: var(--white-color);
+}
+main form input::placeholder,
+main form textarea::placeholder {
+    color: var(--white-color);
+}
+/*============================*/
+/*========== HEADER ==========*/
+/*============================*/
+
+header {
+    width: 100%;
+    height: 350px;
+    background-image: url(../assets/img/img-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 0;
+    position: relative;
+}
+header::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+        to top right,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.6)
+    );
+}
+.header__container {
+    width: 90%;
+    margin: auto;
+}
+
+/*==========================*/
+/*========== MAIN ==========*/
+/*==========================*/
+
+main {
+    width: 100%;
+    height: auto;
+    padding: 3rem 0;
+}
+.general__container {
+    width: 90%;
+    margin: 0 auto;
+}
+.general__container h2 {
+    position: relative;
+    text-align: center;
+    color: var(--black-color);
+    font-size: var(--main-title-size);
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.general__container h2 span {
+    background: linear-gradient(
+        to right,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.register__container,
+.requirements__container {
+    padding: 1rem;
+}
+.register-content {
+    margin: 0 auto;
+    background: url(../assets/img/img-2.jpg);
+    background-size: cover;
+    background-position: start;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+.register-content::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+
+.register-content form {
+    position: relative;
+    width: 100%;
+}
+.register-content form .item input,
+.register-content form .item textarea,
+.register-content form .item select {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px 5px 0 0;
+    border: none;
+    border-bottom: 2px solid var(--white-color);
+    outline: none;
+    font-size: 1rem;
+}
+.register-content form .item input,
+.register-content form .item select {
+    padding-left: 0.4rem;
+    height: 2.2rem;
+    outline: none;
+    color: var(--white-color);
+}
+.register-content form .item select option {
+    background-color: var(--white-color);
+    color: var(--black-color);
+}
+.register-content form .item textarea {
+    padding: 0.2rem 0.4rem;
+}
+.register-content form .item p {
+    color: var(--gray-color);
+    font-style: italic;
+    margin-bottom: 0;
+}
+.register-content form button {
+    border: none;
+    background: linear-gradient(
+        to right,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+    height: 2.2rem;
+    color: var(--white-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+/* REQUIREMENTS */
+
+.requirements__container .requirements-content {
+    height: 100%;
+    background-image: url(../assets/img/img-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    padding: 2rem;
+}
+.requirements-content::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+}
+.requirements-content h3 {
+    font-size: 2rem;
+    position: relative;
+    color: var(--white-color);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+.requirements-content ul {
+    color: var(--white-color);
+    position: relative;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+.requirements-content ul li:first-child {
+    margin-bottom: 0.5rem;
+}
+.requirements-content p {
+    position: relative;
+    color: var(--white-color);
+    font-size: var(--main-subtitle-size);
+    margin-bottom: 0;
+}
+
+/* MEDIA QUERYS */
+
+@media (width < 992px) and (width > 768px) {
+    header {
+        background-image: url(../assets/img/actividades/actividades-md.jpg);
+    }
+}
+
+@media (width < 768px) and (width > 576px) {
+    header {
+        background-image: url(../assets/img/actividades/actividades-sm.jpg);
+    }
+}
+
+@media (width < 576px) {
+    header {
+        background-image: url(../assets/img/actividades/actividades-sm.jpg);
+    }
+    .general__container h2 {
+        font-size: 2.4rem;
+	  margin-bottom: .8rem;
+    }
+    .requirements__container .requirements-content, .register__container .register-content {
+        padding: 1.5rem;
+    }
+    .requirements-content h3 {
+        font-size: 1.6rem;
+    }
+    .requirements-content ul {
+        font-size: 1.1rem;
+    }
+    .requirements-content p{
+	font-size: 1.1rem;
+    }
+}

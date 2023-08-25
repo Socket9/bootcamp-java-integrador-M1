@@ -1,0 +1,60 @@
+/* ANIMATIONS */
+
+@keyframes moveToRight {
+    0% {
+        transform: translateX(-150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes moveToLeft {
+    0% {
+        transform: translateX(150px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-out-expand-forward-bottom {
+    0% {
+        letter-spacing: 1em;
+        transform: translateZ(300px) translateY(200px);
+        opacity: 0;
+    }
+    60% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateZ(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes blur-out {
+    0% {
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        filter: blur(0.01px);
+	  opacity: 1;
+    }
+}
