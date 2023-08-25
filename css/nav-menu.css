@@ -1,11 +1,16 @@
-
 /*======================================*/
 /*============ NAV BAR MENU ============*/
 /*======================================*/
 
 .active{
-	font-weight: 700;
+	font-weight: 600;
 	color: var(--secondary-color) !important;
+	border-bottom: 2px solid var(--secondary-color) !important;
+}
+.active-dropdown{
+	font-weight: 600;
+	color: var(--secondary-color) !important;
+	border-left: 2px solid var(--secondary-color) !important;
 }
 .navbar{
 	width: 100%;
@@ -51,11 +56,12 @@
 .navbar__container-social a{
 	font-size: var(--nav-icon-size);
 	display: flex;
-	color: var(--secondary-color);
-	transition: scale .2s ease;
+	color: var(--black-color);
+	transition: all .2s ease;
 }
 .navbar__container-social a:hover{
-	scale: 1.1;
+	scale: 1.05;
+	color: var(--secondary-color);
 }
 
 /* TOGGLE BUTTON */

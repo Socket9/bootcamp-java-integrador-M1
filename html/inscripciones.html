@@ -11,28 +11,28 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Finlandica:wght@400;600;700&display=swap" rel="stylesheet">
 	<!-- FILES LINK -->
-	<link rel="shortcut icon" href="./assets/img/logo-ico.ico" type="image/x-icon">
-	<link rel="stylesheet" href="./css/styles.css">
-	<link rel="stylesheet" href="./css/variables.css">
-	<link rel="stylesheet" href="./css/nav-menu.css">
-	<link rel="stylesheet" href="./css/footer.css">
-	<link rel="stylesheet" href="./css/animations.css">
+	<link rel="shortcut icon" href="../assets/img/logo-ico.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../css/inscripciones.css">
+	<link rel="stylesheet" href="../css/nav-menu.css">
+	<link rel="stylesheet" href="../css/footer.css">
+	<link rel="stylesheet" href="../css/animations.css">
+	<link rel="stylesheet" href="../css/carousel.css">
 	<title>Proyecto GC</title>
 </head>
 <body>
 	<!-- NAV BAR-->
 	<nav class="navbar">
 		<div class="navbar__container">
-			<a href="./index.html" class="navbar__container-logo">
-				<img src="./assets/img/logo.png" alt="">
+			<a href="../index.html" class="navbar__container-logo">
+				<img src="../assets/img/logo.png" alt="">
 			</a>
 			<div class="navbar__container-links">
-				<a href="./index.html" class="active">Inicio</a>
-				<a href="./html/quienes-somos.html">Quienes somos</a>
-				<a href="./html/proyecto.html">Proyecto</a>
-				<a href="./html/actividades.html">Actividades</a>
-				<a href="./html/colaborar.html">Colaborar</a>
-				<a href="./html/inscripciones.html">Inscripciones</a>
+				<a href="../index.html">Inicio</a>
+				<a href="./quienes-somos.html">Quienes somos</a>
+				<a href="./proyecto.html">Proyecto</a>
+				<a href="./actividades.html">Actividades</a>
+				<a href="./colaborar.html">Colaborar</a>
+				<a href="./inscripciones.html" class="active">Inscripciones</a>
 			</div>
 			<div class="navbar__container-social">
 				<a href="https://www.instagram.com/proyecto.gc">
@@ -49,12 +49,12 @@
 			<!-- DROPDOWN MENU -->
 			<div class="nav__dropdown-menu " id="dropdownMenu">
 				<div class="nav__dropdown-menu-links">
-					<a href="./index.html" class="active-dropdown">Inicio</a>
-					<a href="./html/quienes-somos.html">Quienes somos</a>
-					<a href="./html/proyecto.html">Proyecto</a>
-					<a href="./html/actividades.html">Actividades</a>
-					<a href="./html/colaborar.html">Colaborar</a>
-					<a href="./html/incripciones.html">Inscripciones</a>
+					<a href="../index.html">Inicio</a>
+					<a href="./quienes-somos.html">Quienes somos</a>
+					<a href="./proyecto.html">Proyecto</a>
+					<a href="./actividades.html">Actividades</a>
+					<a href="./colaborar.html" class="active-dropdown">Colaborar</a>
+					<a href="./incripciones.html">Inscripciones</a>
 				</div>
 				<hr>
 				<div class="nav__dropdown-menu-social">
@@ -68,70 +68,76 @@
 			</div>
 		</div>
 	</nav> 
-	<!-- HEADER -->
-	<header>
-		<div class="header__container">
-			<div class="row content d-flex justify-content-between">
-				<div class="header__texts col-lg-6 col-md-12 col-xs-12 d-flex flex-column">
-					<h1 class="title">
-						<span>Proyecto GC</span>
-					</h1>
-					<h2 class="subtitle">Trabajamos por una gran causa</h2>
-					<p>
-						GC es una organización sin fines de lucro que trabaja para promover el desarrollo integral de niños,
-						niñas y adolescentes a través de la educación, articulando los siguientes tres ejes:
-					</p>
-					<div class="header__text-items d-flex flex-column gap-3">
-						<div class="item d-flex align-items-center gap-3">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<i class="bi bi-person-fill-up"></i>
-							</div>
-							<h3>Crecimiento</h3>
-						</div>
-						<div class="item d-flex align-items-center gap-3">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<i class="bi bi-journal-text"></i>
-							</div>
-							<h3>Conocimiento</h3>
-						</div>
-						<div class="item d-flex align-items-center gap-3">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<i class="bi bi-people"></i>
-							</div>
-							<h3>Compañerismo</h3>
-						</div>
-					</div>
-				</div>
-				<div class="header__newsletter col-lg-4 col-md-12 col-xs-12">
-					<div class="border-left"> </div>
-					<h3>Suscribite a nuestro newsletter</h3>
-					<p>
-						¡Únete a nuestra comunidad solidaria y marca la diferencia en la vida de los niños necesitados!
-						Mantente al tanto de cómo juntos estamos trabajando para brindar un futuro más brillante a los más pequeños.
-					</p>
-					<form action="" class="d-flex flex-column gap-3">
-						<div class="item">
-							<input type="email" placeholder="Email">
-						</div>
-						<button onsubmit="">Suscribirse</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</header>
 
 	<!-- MAIN -->
 	<main>
-		<div class="main__container">
-			<section class="main__video">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/4a1-2oGlvHI?si=UiEdlkpeNgjPTzTP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-			</section>
-			<section class="main__call-to-action row text-center">
-				<div class="text col-lg-8 col-md-12 d-flex justify-content-center align-items-center">
-					<h3>Doná esperanza, cambiá vidas!</h3>
+		
+		<div class="general__container row">
+			<h2>
+				<span>Inscripciones 2023</span>
+			</h2>
+			<section class="requirements__container col-xl-4 col-md-12 ">
+				<div class="requirements-content d-flex flex-column">
+					<h3>Requisitos de inscripción</h3>
+					<ul>
+						<li>Tener entre 5 y 11 años</li>
+						<li>Tener acompañamiento de la familia durante el ciclo lectivo</li>
+					</ul>
+					<p>
+						Para comenzar el proceso de inscripción deben completar el siguiente formulario: </span>
+					</p>
 				</div>
-				<div class="call-to-action col-lg-4 col-md-12 d-flex justify-content-center align-items-center">
-					<a href="./html/colaborar.html"><span>Colaborar</span></a>
+			</section>
+
+			<!-- DONATE FORM -->
+			<section class="register__container col-xl-8 col-md-12">
+
+				<div class="register-content">
+					<form action="" method="post" class="d-flex flex-column gap-3">							
+						<div class="item d-flex flex-lg-row flex-column gap-3">
+							<label for="name" hidden>Nombre (padre/madre/tutor): </label>
+							<input type="text" placeholder="Nombre (padre/madre/tutor) *" id="name" name="name" required autocomplete="off">
+							<label for="surname" hidden>Apellido (padre/madre/tutor): </label>
+							<input type="text" placeholder="Apellido (padre/madre/tutor) *" id="surname" name="surname" required autocomplete="off">
+						</div>
+						<div class="item d-flex flex-lg-row flex-column gap-3">
+							<label for="name" hidden>Nombre del alumno: </label>
+							<input type="text" placeholder="Nombre del alumno *" id="name" name="name" required autocomplete="off">
+							<label for="surname" hidden>Apellido del alumno: </label>
+							<input type="text" placeholder="Apellido del alumno *" id="surname" name="surname" required autocomplete="off">
+						</div>
+						<div class="item">
+							<label for="email" hidden>Email: </label>
+							<input type="text" placeholder="Email *" id="email" name="email" required autocomplete="off">
+						</div>
+						<div class="item">
+							<label for="phone" hidden>Telefono: </label>
+							<input type="tel" placeholder="Telefono *" id="phone" name="phone" required autocomplete="off">
+						</div>
+						<div class="item">
+							<label for="shift" hidden>Turno: </label>
+							<select name="shift" id="shift">
+								<option value="" disabled selected>Turno *</option>
+								<option value="morning">Mañana</option>
+								<option value="afternoon">Tarde</option>
+							</select>
+						</div>
+						<div class="item">
+							<label for="msg" hidden>Telefono: </label>
+							<textarea name="msg" id="" cols="30" rows="5" id="msg" placeholder="Mensaje..." autocomplete="off"></textarea>
+							<p>Los campos con * son obligatorios</p>
+						</div>
+						<button id="donate-btn">Enviar mensaje</button>
+					</form>
+				</div>
+			</section>
+	
+			
+			<!-- ACTIVITIES CONTAINER -->
+			
+			<section>
+				<div class="activities__container row">
+					
 				</div>
 			</section>
 		</div>
@@ -192,7 +198,8 @@
 		</div>
 	</footer>
 
-	<script src="./js/dropdown-menu.js"></script>
-	<script src="./js/app.js"></script>
+	<script src="../js/dropdown-menu.js"></script>
+	<script src="../js/carousel.js"></script>
+	<script src="../js/app.js"></script>
 </body>
 </html>

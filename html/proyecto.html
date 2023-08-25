@@ -11,28 +11,27 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Finlandica:wght@400;600;700&display=swap" rel="stylesheet">
 	<!-- FILES LINK -->
-	<link rel="shortcut icon" href="./assets/img/logo-ico.ico" type="image/x-icon">
-	<link rel="stylesheet" href="./css/styles.css">
-	<link rel="stylesheet" href="./css/variables.css">
-	<link rel="stylesheet" href="./css/nav-menu.css">
-	<link rel="stylesheet" href="./css/footer.css">
-	<link rel="stylesheet" href="./css/animations.css">
+	<link rel="shortcut icon" href="../assets/img/logo-ico.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../css/proyecto.css">
+	<link rel="stylesheet" href="../css/nav-menu.css">
+	<link rel="stylesheet" href="../css/footer.css">
+	<link rel="stylesheet" href="../css/animations.css">
 	<title>Proyecto GC</title>
 </head>
 <body>
 	<!-- NAV BAR-->
 	<nav class="navbar">
 		<div class="navbar__container">
-			<a href="./index.html" class="navbar__container-logo">
-				<img src="./assets/img/logo.png" alt="">
+			<a href="../index.html" class="navbar__container-logo">
+				<img src="../assets/img/logo.png" alt="">
 			</a>
 			<div class="navbar__container-links">
-				<a href="./index.html" class="active">Inicio</a>
-				<a href="./html/quienes-somos.html">Quienes somos</a>
-				<a href="./html/proyecto.html">Proyecto</a>
-				<a href="./html/actividades.html">Actividades</a>
-				<a href="./html/colaborar.html">Colaborar</a>
-				<a href="./html/inscripciones.html">Inscripciones</a>
+				<a href="../index.html">Inicio</a>
+				<a href="./quienes-somos.html">Quienes somos</a>
+				<a href="./proyecto.html" class="active">Proyecto</a>
+				<a href="./actividades.html">Actividades</a>
+				<a href="./colaborar.html">Colaborar</a>
+				<a href="./inscripciones.html">Inscripciones</a>
 			</div>
 			<div class="navbar__container-social">
 				<a href="https://www.instagram.com/proyecto.gc">
@@ -49,12 +48,12 @@
 			<!-- DROPDOWN MENU -->
 			<div class="nav__dropdown-menu " id="dropdownMenu">
 				<div class="nav__dropdown-menu-links">
-					<a href="./index.html" class="active-dropdown">Inicio</a>
-					<a href="./html/quienes-somos.html">Quienes somos</a>
-					<a href="./html/proyecto.html">Proyecto</a>
-					<a href="./html/actividades.html">Actividades</a>
-					<a href="./html/colaborar.html">Colaborar</a>
-					<a href="./html/incripciones.html">Inscripciones</a>
+					<a href="../index.html">Inicio</a>
+					<a href="./quienes-somos.html">Quienes somos</a>
+					<a href="./proyecto.html" class="active-dropdown">Proyecto</a>
+					<a href="./actividades.html">Actividades</a>
+					<a href="./colaborar.html">Colaborar</a>
+					<a href="./incripciones.html">Inscripciones</a>
 				</div>
 				<hr>
 				<div class="nav__dropdown-menu-social">
@@ -69,72 +68,93 @@
 		</div>
 	</nav> 
 	<!-- HEADER -->
-	<header>
+	<header class="d-flex justify-content-center align-items-center">
 		<div class="header__container">
-			<div class="row content d-flex justify-content-between">
-				<div class="header__texts col-lg-6 col-md-12 col-xs-12 d-flex flex-column">
-					<h1 class="title">
-						<span>Proyecto GC</span>
-					</h1>
-					<h2 class="subtitle">Trabajamos por una gran causa</h2>
-					<p>
-						GC es una organización sin fines de lucro que trabaja para promover el desarrollo integral de niños,
-						niñas y adolescentes a través de la educación, articulando los siguientes tres ejes:
-					</p>
-					<div class="header__text-items d-flex flex-column gap-3">
-						<div class="item d-flex align-items-center gap-3">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<i class="bi bi-person-fill-up"></i>
-							</div>
-							<h3>Crecimiento</h3>
-						</div>
-						<div class="item d-flex align-items-center gap-3">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<i class="bi bi-journal-text"></i>
-							</div>
-							<h3>Conocimiento</h3>
-						</div>
-						<div class="item d-flex align-items-center gap-3">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<i class="bi bi-people"></i>
-							</div>
-							<h3>Compañerismo</h3>
-						</div>
-					</div>
-				</div>
-				<div class="header__newsletter col-lg-4 col-md-12 col-xs-12">
-					<div class="border-left"> </div>
-					<h3>Suscribite a nuestro newsletter</h3>
-					<p>
-						¡Únete a nuestra comunidad solidaria y marca la diferencia en la vida de los niños necesitados!
-						Mantente al tanto de cómo juntos estamos trabajando para brindar un futuro más brillante a los más pequeños.
-					</p>
-					<form action="" class="d-flex flex-column gap-3">
-						<div class="item">
-							<input type="email" placeholder="Email">
-						</div>
-						<button onsubmit="">Suscribirse</button>
-					</form>
-				</div>
-			</div>
+			<h2 class="title">
+				Proyecto
+			</h2>
+			<p>
+				Conocé un poco más de cómo funciona el proyecto y sus objetivos
+			</p>
 		</div>
 	</header>
 
 	<!-- MAIN -->
 	<main>
-		<div class="main__container">
-			<section class="main__video">
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/4a1-2oGlvHI?si=UiEdlkpeNgjPTzTP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-			</section>
-			<section class="main__call-to-action row text-center">
-				<div class="text col-lg-8 col-md-12 d-flex justify-content-center align-items-center">
-					<h3>Doná esperanza, cambiá vidas!</h3>
+
+		<!-- OPERATION CONTAINER -->
+
+		<section class="general__container">
+			<div class="main__operation">
+				<div class="main__operation-text col-lg-5 col-md-12 col-sm-12">
+					<h2>Funcionamiento</h2>
+					<p>
+						Los niños asisten a contra turno escolar en nuestro predio de González Catán cada semana.
+						El proyecto GC realiza un programa educativo con actividades simultáneas como educación física,
+						apoyo escolar, recreación con talleres de arte, música e idiomas.
+					</p>
+					<p>
+						También participan de una merienda saludable. Las actividades están diseñadas para
+						estimular, enseñar y entrenar las capacidades cognitivas, las relaciones de compañerismo con
+						otros y el desarrollo físico. 
+					</p>
 				</div>
-				<div class="call-to-action col-lg-4 col-md-12 d-flex justify-content-center align-items-center">
-					<a href="./html/colaborar.html"><span>Colaborar</span></a>
+			</div>
+		</section>
+
+		<!-- BANNER -->
+
+		<section class="banner">
+			<div class="banner__container d-flex flex-column">
+				<span class="banner-phrase text-center">
+					"El cerebro no es un vaso por llenar, sino una lámpara por encender"
+				</span>
+				<span class="align-self-end">─ Plutarco ─</span>
+			</div>
+		</section>
+
+		<!-- OBJECTIVES CONTAINER -->
+
+		<section class="general__container">
+			<div class="main__objectives row">
+				<div class="main__objectives-text col-xl-6 col-lg-6 d-flex justify-content-center flex-column">
+					<h2>Objetivos</h2>
+					<p>
+						Para lograr nuestro objetivo de proveer oportunidades para el desarrollo integral de
+						los niños y adolescentes, Los proyectos de GC se basan en tres ejes:
+					</p>
+					<div class="objectives-items d-flex gap-5">
+						<div class="item d-flex align-items-center flex-column gap-1">
+							<div class="icon">
+								<i class="bi bi-person-fill-up"></i>
+							</div>
+							<h3>Crecimiento</h3>
+						</div>
+						<div class="item d-flex align-items-center flex-column gap-1">
+							<div class="icon">
+								<i class="bi bi-journal-text"></i>
+							</div>
+							<h3>Conocimiento</h3>
+						</div>
+						<div class="item d-flex align-items-center flex-column gap-1">
+							<div class="icon">
+								<i class="bi bi-people"></i>
+							</div>
+							<h3>Compañerismo</h3>
+						</div>
+					</div>
+					<p>
+						A través de nuestro programa educativo desarrollamos actividades que proveen oportunidades para
+						lograr que los niños tengan buen crecimiento físico a través del deporte y la alimentación balanceada;
+						para ayudar el desarrollo del conocimiento tienen apoyo pedagógico con enfoque en lenguas y matemáticas;
+						y en lo relacional  con talleres de arte, música e idiomas.
+					</p>
 				</div>
-			</section>
-		</div>
+				<div class="main__objectives-img text-center col-xl-6 col-lg-6">
+					<img src="../assets/img/proyecto/proyecto-img-2.jpg" alt="">
+				</div>
+			</div>
+		</section>
 	</main>
 
 	<!-- FOOTER-->
@@ -192,7 +212,7 @@
 		</div>
 	</footer>
 
-	<script src="./js/dropdown-menu.js"></script>
-	<script src="./js/app.js"></script>
+	<script src="../js/dropdown-menu.js"></script>
+	<script src="../js/app.js"></script>
 </body>
 </html>

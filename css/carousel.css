@@ -1,0 +1,66 @@
+/* ARROW BTN*/
+.wrapper i{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 2.8rem;
+	height: 2.8rem;
+	font-size: 1.5rem;
+	background: var(--black-color);
+	color: var(--white-color);
+	cursor: pointer;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 3;
+}
+.wrapper i:first-child{
+	left: -1.4rem;
+}
+.wrapper i:last-child{
+	right: -1.4rem;
+}
+
+/* CAROUSEL */
+.wrapper{
+	position: relative;
+	width: 100%;
+}
+.wrapper .carousel{
+	height: 300px;
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 1rem;
+	overflow: hidden;
+	scroll-behavior: smooth;
+	cursor: pointer;
+}
+.carousel.dragging{
+	cursor: grab;
+	scroll-behavior: auto;
+}
+.carousel.dragging img{
+	pointer-events: none;
+}
+.carousel img{
+	height: auto;
+	object-fit: cover;
+	width: calc(100% / 4);
+}
+
+@media (width < 1200px){
+	.carousel img{
+		width: calc(100% / 3);
+	}
+}
+@media (width < 998px){
+	.carousel img{
+		width: calc(100% / 2);
+	}
+}
+@media (width < 576px){
+	.carousel img{
+		width: 100%;
+	}
+}
