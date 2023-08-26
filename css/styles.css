@@ -222,10 +222,6 @@ main {
     border-radius: var(--section-border-radius);
     overflow: hidden;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
-    animation:blur-out 1s linear both;
-    animation-delay: 3s;
-    animation-fill-mode: forwards;
-    opacity: 0;
 }
 .main__video iframe {
     width: 100%;
@@ -237,7 +233,7 @@ main {
     position: relative;
     border-radius: var(--section-border-radius);
     background-color: var(--black-color);
-    padding: 1.8rem 0;
+    padding: 1.8rem;
 }
 .main__call-to-action .text h3 {
     font-size: 2rem;
