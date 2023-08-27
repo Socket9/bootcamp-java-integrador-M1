@@ -54,7 +54,7 @@
 					<a href="./html/proyecto.html">Proyecto</a>
 					<a href="./html/actividades.html">Actividades</a>
 					<a href="./html/colaborar.html">Colaborar</a>
-					<a href="./html/incripciones.html">Inscripciones</a>
+					<a href="./html/inscripciones.html">Inscripciones</a>
 				</div>
 				<hr>
 				<div class="nav__dropdown-menu-social">
@@ -109,12 +109,16 @@
 						¡Únete a nuestra comunidad solidaria y marca la diferencia en la vida de los niños necesitados!
 						Mantente al tanto de cómo juntos estamos trabajando para brindar un futuro más brillante a los más pequeños.
 					</p>
-					<form action="" class="d-flex flex-column gap-3">
+					<form action="" class="d-flex flex-column gap-3" id="newsletterForm">
 						<div class="item">
-							<input type="email" placeholder="Email">
+							<input type="email" placeholder="Email" id="newsletterInput" autocomplete="off" required>
 						</div>
-						<button onsubmit="">Suscribirse</button>
+						<p class="error-msg hidden" id="errorMessage">Mail inválido, intentelo de nuevo</p>
+						<button id="suscribeButton">Suscribirse</button>
 					</form>
+					<div class="suscribed hidden" id="suscribed">
+						<span>Te has suscrito!</span>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -167,21 +171,21 @@
 					Si tenés alguna duda o querés que te contactemos vía email
 					llená este formulario y nos pondremos en contacto a la brevedad
 				</p>
-				<form action="" class="footer__contact-form">
+				<form action="" class="footer__contact-form" id="footerForm">
 					<div class="item">
-						<label for="name" hidden>Nombre: </label>
-						<input type="text" id="name" placeholder="Nombre *" required>
+						<label for="footerNameInput" hidden>Nombre: </label>
+						<input type="text" id="footerNameInput" placeholder="Nombre completo *" required>
 					</div>
 					<div class="item">
-						<label for="email" hidden>Email: </label>
-						<input type="email" id="email" placeholder="Email *" required>
+						<label for="footerEmailInput" hidden>Email: </label>
+						<input type="email" id="footerEmailInput" placeholder="Email *" required>
 					</div>
 					<div class="item">
-						<label for="msg" hidden>Email: </label>
-						<textarea name="msg" id="msg" cols="30" rows="4" placeholder="Escribe tu mensaje aqui... *" required></textarea>
+						<label for="footerMsgInput" hidden>Mensaje: </label>
+						<textarea name="msg" id="footerMsgInput" cols="30" rows="4" placeholder="Escribe tu mensaje aqui... *" required></textarea>
 						<span>Los campos con * son obligatorios</span>
 					</div>
-					<button onsubmit="">Enviar</button>
+					<button id="footerButton">Enviar</button>
 				</form>
 			</div>
 		</div>
@@ -192,7 +196,9 @@
 		</div>
 	</footer>
 
+	<script src="./js/validaciones.js"></script>
+	<script src="./js/newsletterForm.js"></script>
+	<script src="./js/footerForm.js"></script>
 	<script src="./js/dropdown-menu.js"></script>
-	<script src="./js/app.js"></script>
 </body>
 </html>
