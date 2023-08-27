@@ -23,7 +23,7 @@ const dragStart = (event) => {
 
 const dragStop = () => {
     isDragStart = false;
-    carouselEl.classList.remove('dragging');
+    carouselEl.classList.remove("dragging");
 };
 
 const dragging = (event) => {
